@@ -1,0 +1,285 @@
+:root {
+  --primary-color: rgba(47, 150, 47, 1);
+  --secondary-color: rgb(136, 226, 136);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0.75rem 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Utility Classes */
+
+.text-primary {
+  color: green;
+}
+
+/* Success and Error */
+
+.success,
+.error {
+  color: white;
+  padding: 5px;
+  margin: 5px 0 15px 0;
+}
+
+.success {
+  background: green;
+}
+
+.error {
+  background: red;
+}
+
+/* Navbar */
+
+#navbar h1 {
+  display: inline-block;
+}
+.logo {
+  height: 100px;
+  width: 100px;
+  padding: 4px;
+  border-radius: 50%;
+  background: rgba(47, 150, 47, 0.5);
+}
+
+#navbar {
+  display: flex;
+  top: 0;
+  position: sticky;
+  background: #fff;
+  color: #fff;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: right;
+  padding: 0 2rem;
+}
+
+#navbar ul li a {
+  color: green;
+  padding: 0 0.5rem;
+  font-size: 1.3rem;
+}
+
+#showcase {
+  background: #333
+    url("/images/african-children-black-children-children-2409929.jpg")
+    no-repeat center center/cover;
+  height: 100vh;
+  color: var(--primary-color);
+}
+
+#showcase .showcase-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.btn {
+  padding: 15px 25px;
+  border-radius: 5px;
+  background: var(--primary-color);
+  font-size: 1.5rem;
+  color: #fff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  opacity: 0.7;
+}
+
+.btn:hover {
+  background: var(--secondary-color);
+}
+#showcase .showcase-content h1 {
+  font-size: 5rem;
+  line-height: 7rem;
+  color: rgba(136, 226, 136, 0.5);
+  padding: 3px;
+  margin-top: 40px;
+}
+#showcase .showcase-content h1 .l-heading {
+  color: rgba(255, 255, 255, 0.4);
+}
+.l-heading {
+  font-size: 7rem;
+}
+#showcase .showcase-content p {
+  padding: 2rem;
+  font-size: 1.2rem;
+
+  color: var(--secondary-color);
+}
+
+#who-section .container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem;
+  line-height: 2rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+#who-section i {
+  padding: 2rem;
+  color: var(--primary-color);
+}
+
+#where .container {
+  /* background-color: var(--primary-color); */
+  padding: 0 0;
+  height: 600px;
+}
+#where .right-where {
+  background: var(--primary-color);
+  padding: 200px 0;
+}
+
+#where .right-where h2 {
+  font-size: 3rem;
+  color: white;
+}
+
+#where .right-where p {
+  font-size: 1.5rem;
+  color: white;
+}
+#where .left-where {
+  background: url("/images/boy-child-children-1002061.jpg") no-repeat center
+    center/cover;
+  height: 600px;
+  margin-right: auto;
+}
+#main-footer {
+  padding-top: 50px;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#footer-navbar {
+  display: flex;
+  top: 0;
+  position: sticky;
+  background: #fff;
+  color: #fff;
+  justify-content: center;
+  z-index: 1;
+}
+
+#main-footer .menu-links {
+  /* padding: 0; */
+}
+
+#footer-navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: right;
+}
+
+#footer-navbar ul li a {
+  color: #333;
+  padding: 1rem 0.5rem;
+  font-size: 15px;
+}
+
+.social-media-icons {
+  font-size: 10px;
+  margin-bottom: 0;
+  padding-top: 70px;
+  color: #333;
+}
+
+.social-media-icons a {
+  color: #333;
+  padding: 0 3px;
+}
+
+.social-media-icons a:hover,
+#footer-navbar ul li a:hover {
+  color: var(--primary-color);
+}
+
+#who-we-are img {
+  height: 500px;
+}
+
+#who-we-are h1,
+p {
+  font-family: "Oswald", sans-serif;
+}
+
+#who-we-are h1 {
+  font-size: 2rem;
+}
+
+.top-section-donate {
+  background: rgba(167, 167, 167, 0.2);
+}
+
+#get-involved {
+  background: rgba(255, 254, 254, 0.2);
+}
+.participate {
+  padding-top: 180px;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 180px;
+  margin-left: 0;
+}
+
+.participate a {
+  text-decoration: none;
+}
+
+.participate h1 {
+  font-size: 50px;
+  color: white;
+}
+
+.donate-right {
+  /* background-color: var(--secondary-color); */
+  opacity: 0.4;
+  border-left: #333 solid 1px;
+}
+.donate-left {
+  /* background-color: var(--secondary-color); */
+  opacity: 0.4;
+}
+
+.donate-right:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0.8;
+}
+
+.donate-left:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0.8;
+}
+
+.bottom-section-donate {
+  background: url(/images/doug-linstedt-135670-unsplash.jpg) no-repeat center
+    center/cover;
+}
